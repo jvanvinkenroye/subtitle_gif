@@ -55,7 +55,7 @@ def generate_srt(result, srt_file):
 def burn_subtitles(input_video, srt_file, output_video):
     ffmpeg_filter = (
         f"subtitles={srt_file}:force_style="
-        f"'Alignment=2,FontSize=60,MarginV=100'"
+        f"'Alignment=2,FontSize=40,MarginV=100'"
     )
 
     command = [
